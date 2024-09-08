@@ -6,6 +6,7 @@ import HighOrder from "./examples/HighOrder";
 import StateManagement from "./examples/StateManagement";
 import PerformanceManagement from "./examples/PerformanceManagement";
 import RenderPropPattern from "./examples/RenderPropPattern";
+import CompoundPattern from "./examples/CompoundPattern";
 
 export default function App() {
   return (
@@ -37,6 +38,9 @@ export default function App() {
             <li>
               <Link to="/examples/renderprop">Render Props Pattern</Link>
             </li>
+            <li>
+              <Link to="/examples/compound">Compound Pattern</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -55,6 +59,7 @@ export default function App() {
             element={<PerformanceManagement />}
           />
           <Route path="/examples/renderprop" element={<RenderPropPattern />} />
+          <Route path="/examples/compound" element={<CompoundPattern />} />
         </Routes>
       </main>
     </BrowserRouter>
